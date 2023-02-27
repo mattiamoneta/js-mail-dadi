@@ -1,0 +1,62 @@
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+:root{
+    --main-color: #183e63;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+button{
+    padding: 8px 15px;
+    background-color: var(--main-color);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+}
+
+input[type="email"]{
+
+    padding: 7px 15px;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+}
+
+.msgBox{
+    border-radius: 5px;
+    background-color: gainsboro;
+    padding: 10px;
+    margin-top: 20px;
+    display: none;
+}
+
+
+.msgBox.visible{
+    display: inline-block!important;
+}
+
+.msgBox.dialog-error{
+    background-color: #e9bcbc;
+    border: 1px solid #7a0404;
+    color: #7a0404;
+}
+
+.msgBox.dialog-success{
+    background-color: #c8ebc1;
+    border: 1px solid #03471d;
+    color: #03471d;
+}
